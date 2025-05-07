@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+     <link rel="stylesheet" href="../css/inscription.css">
+</head>
+<body>
+     <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="/inscription.html">Inscription</a>
+    <a href="#compte">Compte</a>
+    <a href="/accueil.html">Accueil</a>
+     <a href="js/jeu.html">Jeu</a>
+     </div>
+  </div>
+    <h1>FORMULAIRE INSCRIPTION </h1>
+    
+<label for="idNom">Nom <span class="text-danger">*</span></label>
+<input type="text" name="nom" id="idNom">
+<br><br>
+
+<label for="idPrenom">Prénom</label>
+<input type="text" name="prenom" id="idPrenom">
+<br><br>
+
+<label for="idEmail">Email <span class="text-danger">*</span></label>
+<input type="text" name="email" id="idEmail">
+<br><br>
+
+<label for="idTel">Téléphone</label>
+<input type="text" name="tel" id="idTel">
+<br><br>
+
+<label for="idMotDePasse">Mot de passe<span class="text-danger">*</span></label>
+<input type="text" name="mdp" id="idMotDePasse">
+<br><br>
+
+<input type="submit" name="valider" value="Envoyer">
+</form>
+<script src="js/inscription.js"></script>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Memory</title>
+    <link rel="stylesheet" href="css/jeu.css"/>
+    
+</head>
+<body>
+    <h1>Jeu Memory</h1>
+    <h3>JavaScript Click Counter</h3>
+<div>
+    <h3 id="counter-label">0</h3>
+</div>
+
+    <div>
+        <div onclick="incrementClick()">Click Me</div>
+        <button onclick="resetCounter()">Reset</button>
+    </div>
+
+ <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="inscription.html">Inscription</a>
+    <a href="#compte">Compte</a>
+    <a href="/accueil.html">Accueil</a>
+    <a href="jeu.html">Jeu</a>
+  </div>
+</div>
+    <p>Trouver toutes les paires de cartes pour gagner !</p>
+    <div id="plateau-de-jeu"></div>
+    
+    <script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    
+
+   
+    <script src="js/script.js"></script>
+</body>
+</html>
