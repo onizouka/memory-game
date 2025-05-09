@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compte</title>
+    <link rel="stylesheet" href="css/compte.css">
+</head>
+<body>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">menu</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="inscription.html">Inscription</a>
+            <a href="compte.html">Compte</a>
+            <a href="index.html">Accueil</a>
+            <a href="jeu.html">Jeu</a>
+        </div>
+    </div>
+    <h1>Mon Compte</h1>
+
+    <div id="form-connexion">
+        <h2>Connexion</h2>
+        <label for="idPseudo">Pseudo</label>
+        <input type="text" id="idPseudo" required>
+        <label for="idMdp">Mot de passe</label>
+        <input type="password" id="idMdp" required>
+        <button id="btnConnexion">Se connecter</button>
+    </div>
+
+    <div id="profil-joueur" style="display: none;">
+        <h2>Profil</h2>
+        <p>Pseudo : <span id="affPseudo"></span></p>
+        <p>Meilleur score : <span id="affScore"></span></p>
+        <button id="btnDeconnexion">Se déconnecter</button>
+    </div>
+
+    <script src="js/compte.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

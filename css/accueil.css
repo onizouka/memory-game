@@ -1,76 +1,121 @@
 body {
     font-family: sans-serif;
+    /* Utilise une police sans empattement pour tout le texte */
     text-align: center;
-    background-color: bisque;
+    /* Centre le texte horizontalement */
+    background-color: burlywood;
+    /* Définit la couleur de fond de la page */
     margin: 0;
+    /* Supprime la marge par défaut du navigateur */
     padding: 0;
+    /* Supprime le padding par défaut du navigateur */
 }
+
 h1 {
-    color : blueviolet;
+    color: blueviolet;
+    /* Définit la couleur du titre principal */
 }
+
 h2 {
     color: cadetblue;
+    /* Définit la couleur du sous-titre */
 }
+
 h3 {
     color: blueviolet;
+    /* Définit la couleur du titre de niveau 3 */
 }
 
 .dropbtn {
     background-color: #3498DB;
+    /* Couleur de fond du bouton menu */
     color: white;
+    /* Couleur du texte du bouton */
     padding: 26px;
+    /* Espace intérieur du bouton */
     font-size: 16px;
+    /* Taille du texte du bouton */
     border: none;
+    /* Supprime la bordure */
     cursor: pointer;
+    /* Change le curseur au survol */
     border-radius: 8px;
+    /* Bords arrondis */
 }
 
 .dropbtn:hover,
 .dropbtn:focus {
     background-color: #2980B9;
+    /* Couleur de fond du bouton au survol ou au focus */
 }
 
 .dropdown {
     position: fixed;
+    /* Positionne le menu par rapport à la fenêtre */
     top: 30px;
+    /* Distance du menu par rapport au haut de la page */
     left: 50px;
+    /* Distance du menu par rapport à la gauche de la page */
     display: inline-block;
-   
+    /* Affichage en bloc en ligne */
 }
+
 .dropdown-content {
     display: none;
+    /* Cache le menu déroulant par défaut */
     position: absolute;
+    /* Positionne le menu par rapport à son parent */
     background-color: #f1f1f1;
+    /* Couleur de fond du menu déroulant */
     min-width: 160px;
+    /* Largeur minimale du menu */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Ombre portée */
     z-index: 1;
+    /* Place le menu au-dessus des autres éléments */
     transition: opacity 0.3s, visibility 0.3s;
-        opacity: 0;
-        visibility: hidden;
+    /* Animation douce pour l’apparition/disparition */
+    opacity: 0;
+    /* Menu invisible par défaut */
+    visibility: hidden;
+    /* Menu caché par défaut */
 }
+
 .dropdown-content.show {
     display: block;
+    /* Affiche le menu déroulant */
     opacity: 1;
+    /* Rends le menu visible */
     visibility: visible;
+    /* Rends le menu visible */
 }
 
 .dropdown-content a {
     color: rgb(0, 0, 0);
+    /* Couleur du texte des liens du menu */
     padding: 12px 16px;
+    /* Espace intérieur des liens */
     text-decoration: none;
+    /* Supprime le soulignement */
     display: block;
+    /* Affiche chaque lien sur une nouvelle ligne */
 }
 
 .dropdown-content a:hover {
     background-color: #ddd;
+    /* Change la couleur de fond au survol d’un lien */
 }
-
 
 .center {
     display: flex;
+    /* Utilise Flexbox pour centrer le contenu */
     justify-content: center;
+    /* Centre horizontalement les éléments enfants */
     margin: 20px 0;
+    /* Marge au-dessus et en dessous */
 }
+
 .dropdown-content a:focus {
     background-color: #ddd;
+    /* Change la couleur de fond lorsqu’un lien est sélectionné */
 }

@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="../css/accueil.css">
+    <link rel="stylesheet" href="css/accueil.css">
 </head>
 
+
 <body>
+  
+<header>
+  <nav>
     <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">menu</button>
   <div id="myDropdown" class="dropdown-content">
     <a href="inscription.html">Inscription</a>
-    <a href="#compte">Compte</a>
-    <a href="#accueil">Accueil</a>
+    <a href="compte.html">Compte</a>
+    <a href="index.html">Accueil</a>
     <a href="jeu.html">Jeu</a>
   </div>
   </div>
+</nav>
     <h1>JEU Memory DINO</h1>
-    <h2>DINO Memorie</h2>
-        <img src="js/imgDino/memory_details_dinosaures_avec_nom.png" alt="Memory dinosaures avec noms" width="500" height="250">
-     <h3>regle du jeu</h3>
-     <p>Retourner les cartes et trouver les paires en un minimum de coup !</p>
+    <h2>DINO Memory</h2>
+    </header>
+    <main>
+        <img src="imgDino/memory_details_dinosaures_avec_nom.png" alt="Memory dinosaures avec noms" width="500" height="250">
+     <h3>Règle du jeu</h3>
+     <p>Retourner les cartes et trouver les paires en un minimum de coups !</p>
      <p>BONNE CHANCE</p> 
-
+    </main>
 
 <script>
 function myFunction() {
+//Fonction pour basculer l'affichage du menu deroulant
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
 window.onclick = function(event) {
+  //Ferme le menu déroulant si clique en dehors du bouton
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
